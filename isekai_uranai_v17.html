@@ -423,15 +423,20 @@
   }
   /* Moshimo affiliate banner: keep supplied tracking markup intact. */
   .affiliate-ad{max-width:640px;margin:32px auto 0;padding:0 20px;text-align:center;}
+  .affiliate-ad-top{margin-top:16px;margin-bottom:16px;}
   .affiliate-ad-label{margin:0 0 8px;color:var(--ink-soft);font-size:12px;}
   .affiliate-ad a{display:block;}
   .affiliate-ad a img{display:block;max-width:100%;height:auto;margin:0 auto;}
 </style>
 </head>
 <body>
+<!-- Render the banner as HTML elements, never as escaped tag text. -->
 <aside class="affiliate-ad affiliate-ad-top" aria-label="広告">
   <p class="affiliate-ad-label">広告・PR</p>
-  <a href="//af.moshimo.com/af/c/click?a_id=5844862&p_id=54&pc_id=54&pl_id=620" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" attributionsrc><img src="//image.moshimo.com/af-img/0032/000000000620.gif" width="468" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=5844862&p_id=54&pc_id=54&pl_id=620" width="1" height="1" style="border:none;" loading="lazy">
+  <a href="https://af.moshimo.com/af/c/click?a_id=5844862&amp;p_id=54&amp;pc_id=54&amp;pl_id=620" rel="nofollow sponsored" referrerpolicy="no-referrer-when-downgrade" attributionsrc>
+    <img src="https://image.moshimo.com/af-img/0032/000000000620.gif" width="468" height="60" style="border:none;" alt="広告バナー" loading="eager">
+  </a>
+  <img src="https://i.moshimo.com/af/i/impression?a_id=5844862&amp;p_id=54&amp;pc_id=54&amp;pl_id=620" width="1" height="1" style="border:none;" loading="lazy" alt="">
 </aside>
 
 <div class="modal-backdrop" id="creature-modal">
